@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.stf__block{
+    display: flex !important;
+    justify-content: start !important;
+}
+
+@media only screen and (min-width: 646px) {
+    .book-middle{
+        transform: translateX(-25%) !important;
+        position: relative;
+        &::after{
+            top: 0;
+            display: inline-block;
+            position: absolute;
+            content: "";
+            //background-color: red;
+            width: 50%;
+            height: 1000px;
+        }
+    }
+    .book-middle-reverse{
+        transform: translateX(25%) !important;
+    }
+}
+
+
+@import './scss/star_bg';
