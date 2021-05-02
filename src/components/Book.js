@@ -1,61 +1,118 @@
-import page_01 from '../pages/page_01.svg';
-import page_02 from '../pages/page_02.svg';
-import page_03 from '../pages/page_03.svg';
-import page_04 from '../pages/page_04.svg';
-import page_05 from '../pages/page_05.svg';
-import page_06 from '../pages/page_06.svg';
-import page_07 from '../pages/page_07.svg';
-import page_08 from '../pages/page_08.svg';
-import page_09 from '../pages/page_09.svg';
-import page_10 from '../pages/page_10.svg';
-import page_11 from '../pages/page_11.svg';
-import page_12 from '../pages/page_12.svg';
-import page_13 from '../pages/page_13.svg';
-import page_14 from '../pages/page_14.svg';
+import dark_page_01 from '../pages/dark/page_01.svg';
+import dark_page_02 from '../pages/dark/page_02.svg';
+import dark_page_03 from '../pages/dark/page_03.svg';
+import dark_page_04 from '../pages/dark/page_04.svg';
+import dark_page_05 from '../pages/dark/page_05.svg';
+import dark_page_06 from '../pages/dark/page_06.svg';
+import dark_page_07 from '../pages/dark/page_07.svg';
+import dark_page_08 from '../pages/dark/page_08.svg';
+import dark_page_09 from '../pages/dark/page_09.svg';
+import dark_page_10 from '../pages/dark/page_10.svg';
+import dark_page_11 from '../pages/dark/page_11.svg';
+import dark_page_12 from '../pages/dark/page_12.svg';
+import dark_page_13 from '../pages/dark/page_13.svg';
+import dark_page_14 from '../pages/dark/page_14.svg';
 
-function Book() {
+import bright_page_01 from '../pages/bright/page_01.svg';
+import bright_page_02 from '../pages/bright/page_02.svg';
+import bright_page_03 from '../pages/bright/page_03.svg';
+import bright_page_04 from '../pages/bright/page_04.svg';
+import bright_page_05 from '../pages/bright/page_05.svg';
+import bright_page_06 from '../pages/bright/page_06.svg';
+import bright_page_07 from '../pages/bright/page_07.svg';
+import bright_page_08 from '../pages/bright/page_08.svg';
+import bright_page_09 from '../pages/bright/page_09.svg';
+import bright_page_10 from '../pages/bright/page_10.svg';
+import bright_page_11 from '../pages/bright/page_11.svg';
+import bright_page_12 from '../pages/bright/page_12.svg';
+import bright_page_13 from '../pages/bright/page_13.svg';
+import bright_page_14 from '../pages/bright/page_14.svg';
+
+function Book({theme}) {
     return <div className="select-none mx-auto transition-all book-middle duration-500 z-50" id="book">
         <div className="border-nc3 border-2  my-page select-none" data-density="hard">
-            <img src={page_01} alt="PAGE" />
+            {theme ? 
+            <img src={dark_page_01} alt="PAGE" />
+            :
+            <img src={bright_page_01} alt="PAGE" />}
         </div>
         <div className="border-nc3 border-2  my-page select-none">
-            <img src={page_02} alt="PAGE" />
+            {theme ? 
+            <img src={dark_page_02} alt="PAGE" />
+            :
+            <img src={bright_page_02} alt="PAGE" />}
         </div>
         <div className="border-nc3 border-2 my-page select-none" >
-            <img src={page_03} alt="PAGE" />
+            {theme ? 
+            <img src={dark_page_03} alt="PAGE" />
+            :
+            <img src={bright_page_03} alt="PAGE" />}
         </div>
         <div className="border-nc3 border-2 my-page select-none" >
-            <img src={page_04} alt="PAGE" />
+            {theme ? 
+            <img src={dark_page_04} alt="PAGE" />
+            :
+            <img src={bright_page_04} alt="PAGE" />}
         </div>
         <div className="border-nc3 border-2 my-page select-none" >
-            <img src={page_05} alt="PAGE" />
+            {theme ? 
+            <img src={dark_page_05} alt="PAGE" />
+            :
+            <img src={bright_page_05} alt="PAGE" />}
         </div>
         <div className="border-nc3 border-2 my-page select-none" >
-            <img src={page_06} alt="PAGE" />
+            {theme ? 
+            <img src={dark_page_06} alt="PAGE" />
+            :
+            <img src={bright_page_06} alt="PAGE" />}
         </div>
         <div className="border-nc3 border-2 my-page select-none" >
-            <img src={page_07} alt="PAGE" />
+            {theme ? 
+            <img src={dark_page_07} alt="PAGE" />
+            :
+            <img src={bright_page_07} alt="PAGE" />}
         </div>
         <div className="border-nc3 border-2 my-page select-none" >
-            <img src={page_08} alt="PAGE" />
+          {theme ? 
+            <img src={dark_page_08} alt="PAGE" />
+            :
+            <img src={bright_page_08} alt="PAGE" />}
         </div>
         <div className="border-nc3 border-2 my-page select-none" >
-            <img src={page_09} alt="PAGE" />
+          {theme ? 
+            <img src={dark_page_09} alt="PAGE" />
+            :
+            <img src={bright_page_09} alt="PAGE" />}
         </div>
         <div className="border-nc3 border-2 my-page select-none" >
-            <img src={page_10} alt="PAGE" />
+         {theme ? 
+            <img src={dark_page_10} alt="PAGE" />
+            :
+            <img src={bright_page_10} alt="PAGE" />}
         </div>
         <div className="border-nc3 border-2 my-page select-none" >
-            <img src={page_11} alt="PAGE" />
+            {theme ? 
+            <img src={dark_page_11} alt="PAGE" />
+            :
+            <img src={bright_page_11} alt="PAGE" />}
         </div>
         <div className="border-nc3 border-2 my-page select-none" >
-            <img src={page_12} alt="PAGE" />
+          {theme ? 
+            <img src={dark_page_12} alt="PAGE" />
+            :
+            <img src={bright_page_12} alt="PAGE" />}
         </div>
         <div className="border-nc3 border-2 my-page select-none" >
-            <img src={page_13} alt="PAGE" />
+         {theme ? 
+            <img src={dark_page_13} alt="PAGE" />
+            :
+            <img src={bright_page_13} alt="PAGE" />}
         </div>
         <div className="border-nc3 border-2 my-page select-none" data-density="hard">
-            <img src={page_14} alt="PAGE" />
+            {theme ? 
+            <img src={dark_page_14} alt="PAGE" />
+            :
+            <img src={bright_page_14} alt="PAGE" />}
         </div>
     </div>
 }

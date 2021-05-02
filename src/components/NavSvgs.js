@@ -1,6 +1,6 @@
-export function Stripe({ className }) {
+export function Stripe({ className, color }) {
     return <svg className={`w-32 -mr-8 -ml-8  ${className}`}  height="39" viewBox="0 0 121 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect y="48.9998" width="136.482" height="32" transform="rotate(-43.5301 0 48.9998)" fill="#005681" />
+        <rect y="48.9998" width="136.482" height="32" transform="rotate(-43.5301 0 48.9998)" fill={color} />
     </svg>
 }
 

@@ -87,20 +87,21 @@ window.onload = () => {
 
 
 function App() {
+  const [theme, setTheme] = useState(false);
+
   return (
     <div className="overflow-hidden h-screen">
-      <div className=" absolute bg-mc1 h-full w-full overflow-hidden">
+      <div className={`absolute ${theme ? 'bg-mc1' : 'bg-gradient-to-b from-nc1 to-black'} h-full w-full overflow-hidden`}>
         <div className=" relative  mx-auto " style={{width: "2000px"}}>
           <div id="stars"></div>
           <div id="stars1"></div>
           <div id="stars2"></div>
         </div>
       </div>
-      {/*  */}
-      <div className="   z-10 relative ">
-        <Nav />
-        <div className="  px-2 md:px-10">
-          <Book />
+      <div className="z-10 relative">
+        <Nav setTheme={setTheme} theme={theme} />
+        <div className="px-2 md:px-10">
+          <Book theme={theme} />
         </div>
       </div>
     </div>
