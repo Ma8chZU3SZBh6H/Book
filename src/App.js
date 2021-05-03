@@ -91,7 +91,7 @@ function App() {
 
   return (
     <div className="overflow-hidden h-screen">
-      <div className={`absolute ${theme ? 'bg-mc1' : 'bg-gradient-to-b from-nc1 to-black'} h-full w-full overflow-hidden`}>
+      <div className={`absolute ${theme ? 'bg-mc1' : 'bg-gradient-to-b from-nc1 to-mc1'} h-full w-full overflow-hidden`}>
         <div className=" relative  mx-auto " style={{width: "2000px"}}>
           <div id="stars"></div>
           <div id="stars1"></div>
